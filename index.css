@@ -1,0 +1,96 @@
+body {
+  height: 100vh;
+}
+
+.tbody-container {
+  border: 3px solid black;
+}
+
+.table {
+  width: 67%;
+  margin: auto;
+}
+
+.form-container {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  margin-top: 5%;
+}
+
+.form-container__button {
+  position: absolute;
+  top: 108%;
+  right: 0%;
+}
+
+.input-book {
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pipe-line {
+  color: white;
+  line-height: 2.4rem;
+}
+
+#padding-container {
+  padding: 0 4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#contact {
+  width: 58%;
+  margin: auto;
+}
+
+.footer {
+  text-align: left;
+  border: 3px solid black;
+  margin-top: 16rem;
+}
+
+#date {
+  text-align: right;
+  margin-right: 5%;
+}
+
+.ul-container {
+  padding-left: 12rem;
+  padding-right: 10rem;
+}
+
+.ul-container li {
+  text-align: left;
+}
+
+.form-h2 {
+  text-align: center;
+}
+
+.contact-h2 {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.w19{
+  width: 19%
+}
+
+.position-relative{
+  position: relative;
+}
+
+.footer{
+  background-color: rgba(0, 0, 0, 0.2);
+}
