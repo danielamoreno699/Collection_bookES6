@@ -114,11 +114,7 @@ GitHub pages
 
 ## 👷‍♂️ Author <a name="authors"></a>
 
-👷‍♂️ **Juan Sanchez**
 
-- GitHub: [@githubhandle](https://github.com/J-C-S-V)
-- Twitter: [@twitterhandle](https://twitter.com/juansan0)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/juan-carlos-sanchez-vargas-a308b014b/)
 
 👷‍♂️ **daniela**
 
