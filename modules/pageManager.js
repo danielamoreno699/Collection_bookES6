@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 class PageManager {
@@ -46,7 +47,6 @@ class PageManager {
   displayPage = (currentPage) => {
     const sections = document.querySelectorAll('section');
 
-    // eslint-disable-next-line no-restricted-syntax
     for (const section of sections) {
       if (section.id === currentPage) {
         section.classList.remove('hidden');
