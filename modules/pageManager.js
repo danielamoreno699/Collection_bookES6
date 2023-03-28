@@ -49,7 +49,7 @@ class PageManager {
     // eslint-disable-next-line no-restricted-syntax
     for (const section of sections) {
       if (section.id === currentPage) {
-        this.section.classList.remove('hidden');
+        section.classList.remove('hidden');
       } else {
         section.classList.add('hidden');
       }
