@@ -29,6 +29,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
-    "luxon": "^3.3.0"
+    "luxon": "^3.3.0",
+    "regenerator-runtime": "^0.13.11"
   }
 }

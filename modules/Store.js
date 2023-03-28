@@ -1,7 +1,6 @@
-/* eslint-disable import/prefer-default-export */
-import { UI } from './UI.js';
+import UI from './UI.js';
 
-export class Store {
+class Store {
   static getBooks() {
     let books;
     if (localStorage.getItem('books') === null) {
@@ -52,3 +51,5 @@ export class Store {
 } document.addEventListener('DOMContentLoaded', () => {
   Store.displayBooks();
 });
+
+export default Store;

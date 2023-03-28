@@ -1,7 +1,5 @@
-// eslint-disable-next-line import/prefer-default-export
-export class UI {
-// eslint-disable-next-line class-methods-use-this
-  addBookToTheList(book) {
+class UI {
+  addBookToTheList =(book) => {
     const ul = document.getElementById('tbody-container');
     const li = document.createElement('tr');
     li.innerHTML = `
@@ -12,11 +10,12 @@ export class UI {
     ul.insertBefore(li, ul.firstChild);
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  clearFieldsInputs() {
+  clearFieldsInputs =() => {
     const author = document.getElementById('author');
     const title = document.getElementById('book');
     author.value = '';
     title.value = '';
   }
 }
+
+export default UI;

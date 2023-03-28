@@ -1,8 +1,6 @@
-/* eslint-disable class-methods-use-this */
-/* eslint-disable import/prefer-default-export */
 import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
-export class PageManager {
+class PageManager {
   constructor() {
     this.formSection = document.getElementById('add-book-section');
     this.listSection = document.getElementById('table-books');
@@ -10,6 +8,8 @@ export class PageManager {
     this.span = document.getElementById('date');
     this.links = document.querySelectorAll('a');
     this.currentPage = this.getCurrentPage();
+    this.sections = document.querySelectorAll('section');
+
     this.date = DateTime.local();
   }
 
@@ -43,19 +43,19 @@ export class PageManager {
     this.displayContact();
   }
 
-  displayPage(currentPage) {
+  displayPage = (currentPage) => {
     const sections = document.querySelectorAll('section');
-    // eslint-disable-next-line no-restricted-syntax
-    for (const section of sections) {
+
+    sections.forEach((section) => {
       if (section.id === currentPage) {
         section.classList.remove('hidden');
       } else {
         section.classList.add('hidden');
       }
-    }
+    });
   }
 
-  getCurrentPage() {
+  getCurrentPage =() => {
     const currentPage = localStorage.getItem('currentPage');
     if (currentPage) {
       return currentPage;
@@ -86,3 +86,5 @@ export class PageManager {
 
 const pageManager = new PageManager();
 pageManager.init();
+
+export default PageManager;
