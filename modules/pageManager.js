@@ -1,8 +1,9 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable class-methods-use-this */
-/* eslint-disable import/prefer-default-export */
+
 import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
-export class PageManager {
+class PageManager {
   constructor() {
     this.formSection = document.getElementById('add-book-section');
     this.listSection = document.getElementById('table-books');
@@ -45,7 +46,7 @@ export class PageManager {
 
   displayPage(currentPage) {
     const sections = document.querySelectorAll('section');
-    // eslint-disable-next-line no-restricted-syntax
+
     for (const section of sections) {
       if (section.id === currentPage) {
         section.classList.remove('hidden');
@@ -86,3 +87,5 @@ export class PageManager {
 
 const pageManager = new PageManager();
 pageManager.init();
+
+export default PageManager;

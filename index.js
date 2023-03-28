@@ -1,9 +1,10 @@
-import { Book } from './modules/Book.js';
-import { UI } from './modules/UI.js';
-import { Store } from './modules/Store.js';
-import { PageManager } from './modules/pageManager.js';
+/* eslint-disable no-unused-vars */
 
-// eslint-disable-next-line no-unused-vars
+import Book from './modules/Book.js';
+import UI from './modules/UI.js';
+import Store from './modules/Store.js';
+import PageManager from './modules/pageManager.js';
+
 const pageManager = new PageManager();
 
 const form = document.getElementById('form');
@@ -27,7 +28,6 @@ form.addEventListener('submit', (event) => {
 });
 
 document.getElementById('tbody-container').addEventListener('click', (e) => {
-  // eslint-disable-next-line no-unused-vars
   const ui = new UI();
   Store.removeBook(e.target);
   e.preventDefault();
