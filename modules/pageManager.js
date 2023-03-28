@@ -1,4 +1,3 @@
-/* eslint-disable no-restricted-syntax */
 import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 class PageManager {
@@ -47,13 +46,13 @@ class PageManager {
   displayPage = (currentPage) => {
     const sections = document.querySelectorAll('section');
 
-    for (const section of sections) {
+    sections.forEach((section) => {
       if (section.id === currentPage) {
         section.classList.remove('hidden');
       } else {
         section.classList.add('hidden');
       }
-    }
+    });
   }
 
   getCurrentPage =() => {
