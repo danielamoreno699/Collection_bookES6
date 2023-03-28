@@ -1,7 +1,5 @@
-/* eslint-disable class-methods-use-this */
-
 class UI {
-  addBookToTheList(book) {
+  addBookToTheList =(book) => {
     const ul = document.getElementById('tbody-container');
     const li = document.createElement('tr');
     li.innerHTML = `
@@ -12,7 +10,7 @@ class UI {
     ul.insertBefore(li, ul.firstChild);
   }
 
-  clearFieldsInputs() {
+  clearFieldsInputs =() => {
     const author = document.getElementById('author');
     const title = document.getElementById('book');
     author.value = '';
